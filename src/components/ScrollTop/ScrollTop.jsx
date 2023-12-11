@@ -24,7 +24,7 @@ const ScrollTop = () => {
       {topBtn && (
         <FaAngleDoubleUp
           onClick={top}
-          className="text-xl md:text-4xl text-white fixed bottom-4 right-5"
+          className="text-xl md:text-4xl text-white fixed bottom-4 right-5 cursor-pointer"
         />
       )}
     </div>
