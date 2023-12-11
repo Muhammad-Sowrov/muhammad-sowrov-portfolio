@@ -7,17 +7,16 @@ import Skill from "../Skill/Skill";
 
 
 const Home = () => {
-    return (
-        <div className="max-w-screen-xl mx-auto">
-            <ScrollTop/>
-            <Banner></Banner>
-            <About></About>
-            <Skill></Skill>
-            <Project></Project>
-            <Contact></Contact>
-
-        </div>
-    );
+  return (
+    <div className="max-w-screen-xl mx-auto">
+      <ScrollTop />
+      <Banner></Banner>
+      <About></About>
+      <Skill></Skill>
+      <Project></Project>
+      <Contact></Contact>
+    </div>
+  );
 };
 
 export default Home;
