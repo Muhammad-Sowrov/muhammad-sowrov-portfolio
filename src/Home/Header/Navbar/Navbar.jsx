@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="shadow-md w-full fixed z-30 top-0 left-0">
+    <div className="shadow-md w-full fixed z-30top-0 left-0">
       <div className="">
         <div className="md:flex items-center justify-between bg-gray-900 text-white py-4 px-4">
           <Link to="/">
