@@ -7,8 +7,19 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const scroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <div className="shadow-md w-full fixed top-0 left-0">
+    <div className="shadow-md w-full fixed z-30 top-0 left-0">
       <div className="">
         <div className="md:flex items-center justify-between bg-gray-900 text-white py-4 px-4">
           <Link to="/">
@@ -26,30 +37,30 @@ const Navbar = () => {
           </div>
           <ul
             className={`md:flex items-center text-gray-300 gap-5 md:pb-0 pb-5 absolute md:static bg-gray-900 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-5 transition-all duration-500 ease-in ${
-              open ? "top-0" : "top-[-490px]"
+              open ? "top-8" : "top-[-490px]"
             }`}
           >
-            <Link>
+            <Link onClick={() => scroll("about")} to="#about">
               <li className="hover:text-gray-600 duration-500 md:my-0 my-5">
                 About
               </li>
             </Link>
-            <Link>
+            <Link onClick={() => scroll("skill")} to="#skill">
               <li className="hover:text-gray-600 duration-500 md:my-0 my-5">
                 Skill
               </li>
             </Link>
-            <Link>
+            <Link onClick={() => scroll("project")} to="#project">
               <li className="hover:text-gray-600 duration-500 md:my-0 my-5">
                 Project
               </li>
             </Link>
-            <Link>
+            <Link onClick={() => scroll("contact")} to="#contact">
               <li className="hover:text-gray-600 duration-500 md:my-0 my-5">
                 Contact
               </li>
             </Link>
-            <Link>
+            <Link to="#">
               <Button value={"Resume"}></Button>
             </Link>
           </ul>

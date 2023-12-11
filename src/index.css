@@ -3,4 +3,5 @@
 @tailwind utilities;
 body{
     font-family: 'Lato', sans-serif;
+    background-color: rgb(31 41 55);
 }
