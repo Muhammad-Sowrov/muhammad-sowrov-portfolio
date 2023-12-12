@@ -1,25 +1,36 @@
+import { CiLinkedin } from "react-icons/ci";
+import { RiFacebookBoxFill } from "react-icons/ri";
+import { FaSquareTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
-  
   return (
-    <div className="max-w-screen-lg px-5 h-[100vh]">
-      {/* <div className=" grid grid-cols-2 mt-16 items-center justify-center min-h-screen">
-        <div>
-          <h1 className="text-3xl">Hey, there</h1> <br />
-          <h1 className="text-3xl">I am</h1> <br />
-          <h1 className="text-7xl">Muhammad Sowrov</h1>
+    <div className="min-h-screen flex items-center ">
+      <div className="grid grid-cols-2">
+        <div className="w-ful pl-24 ">
+          <div className="flex gap-2">
+            <div className="border-2 border-white h-52"></div>
+            <div>
+              <h1 className="text-2xl">Hi, I'am</h1>
+              <h1 className="text-5xl font-bold">Muhammad</h1>
+              <h1 className="text-5xl font-bold">Sowrov</h1>
+              <div className="flex gap-8 mt-10">
+                <Link to="https://www.linkedin.com/in/muhammad-sowrov">
+                  <CiLinkedin />
+                </Link>
+                <Link to="https://www.facebook.com/muhammadsowrov53">
+                  <RiFacebookBoxFill />
+                </Link>
+                <Link to="https://twitter.com/__Sowrov">
+                  <FaSquareTwitter />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img
-            src="https://i.ibb.co/tsWQJwr/Picsart-23-09-11-13-55-41-316-1-100.png"
-            alt=""
-            className="w-96 rounded-lg"
-          />
-        </div>
-      </div> */}
+        <div className="w-full"></div>
+      </div>
     </div>
-    
-    
   );
 };
 

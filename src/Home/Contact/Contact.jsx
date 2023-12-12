@@ -53,7 +53,7 @@ const Contact = () => {
             <div className="container mx-auto mt-8 p-0">
               <div className="max-w-md mx-auto md:min-h-[432px] bg-gray-900 p-8 rounded shadow-md">
                 <div className="grid grid-cols-2 items-center md:mb-10">
-                  <div className="flex items-center w-30 text-2xl">
+                  <div className="flex items-center w-30 text-xl md:text-xl">
                     <CiLinkedin />
                     <h1>Linkdin</h1>
                   </div>
@@ -65,7 +65,7 @@ const Contact = () => {
                   </Link>
                 </div>
                 <div className="grid grid-cols-2 items-center md:mb-10">
-                  <div className="flex items-center w-30 text-2xl">
+                  <div className="flex items-center w-30 text-xl md:text-xl">
                     <RiFacebookBoxFill />
                     <h1>Facebook</h1>
                   </div>
@@ -77,14 +77,11 @@ const Contact = () => {
                   </Link>
                 </div>
                 <div className="grid grid-cols-2 items-center">
-                  <div className="flex items-center text-start w-30 text-2xl">
+                  <div className="flex items-center text-start w-30 text-xl md:text-xl">
                     <FaSquareTwitter />
                     <h1>Twitter</h1>
                   </div>
-                  <Link
-                    className="pl-20"
-                    to="https://www.linkedin.com/in/muhammad-sowrov"
-                  >
+                  <Link className="pl-20" to="https://twitter.com/__Sowrov">
                     <FaExternalLinkAlt />
                   </Link>
                 </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../../../components/Button/Button";
+// import Button from "../../../components/Button/Button";
 import { RiMenu4Fill } from "react-icons/ri";
 import { FaTimes } from "react-icons/fa";
 
@@ -16,6 +16,15 @@ const Navbar = () => {
         behavior: "smooth",
       });
     }
+  };
+
+  const handleDownload = () => {
+    const pdfUrl = '/public/assignment4.pdf';
+    const link = document.createElement('a');
+
+    link.href = pdfUrl;
+    link.download = 'assignment4.pdf';
+    link.click();
   };
 
   return (
@@ -60,8 +69,11 @@ const Navbar = () => {
                 Contact
               </li>
             </Link>
-            <Link to="#">
-              <Button value={"Resume"}></Button>
+            <Link>
+              {/* <Button value={"Resume"} onClick={handleDownload}>
+                
+              </Button> */}
+              <button onClick={handleDownload} className="border border-white px-3 lg:px-5 py-1 rounded-lg hover:text-gray-600 duration-500 ">Resume</button>
             </Link>
           </ul>
         </div>
