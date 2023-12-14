@@ -13,7 +13,7 @@ const Skill = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
           {Skills.map((skill) => (
             <div key={skill.id}>
-              <div className="md:w-80 lg:w-96 h-30 mt-5 bg-gray-700 shadow-zinc-900 text-white">
+              <div className="w-72 md:w-80 lg:w-96 h-30 mt-5 bg-gray-700 shadow-zinc-900 text-white">
                 <div className="card-body">
                   <div className="flex justify-between items-center">
                     <h2 className="card-title">{skill.name}</h2>
