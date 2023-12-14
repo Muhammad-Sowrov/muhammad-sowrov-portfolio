@@ -5,7 +5,6 @@ import Banner from "../Header/Banner/Banner";
 import Project from "../Project/Project";
 import Skill from "../Skill/Skill";
 
-
 const Home = () => {
   return (
     <div className="max-w-screen-xl mx-auto">

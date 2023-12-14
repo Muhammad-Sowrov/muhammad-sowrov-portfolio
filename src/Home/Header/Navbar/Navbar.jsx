@@ -19,11 +19,11 @@ const Navbar = () => {
   };
 
   const handleDownload = () => {
-    const pdfUrl = '/public/assignment4.pdf';
-    const link = document.createElement('a');
+    const pdfUrl = "/public/assignment4.pdf";
+    const link = document.createElement("a");
 
     link.href = pdfUrl;
-    link.download = 'assignment4.pdf';
+    link.download = "assignment4.pdf";
     link.click();
   };
 
@@ -73,7 +73,12 @@ const Navbar = () => {
               {/* <Button value={"Resume"} onClick={handleDownload}>
                 
               </Button> */}
-              <button onClick={handleDownload} className="border border-white px-3 lg:px-5 py-1 rounded-lg hover:text-gray-600 duration-500 ">Resume</button>
+              <button
+                onClick={handleDownload}
+                className="border border-white px-3 lg:px-5 py-1 rounded-lg hover:text-gray-600 duration-500 "
+              >
+                Resume
+              </button>
             </Link>
           </ul>
         </div>
