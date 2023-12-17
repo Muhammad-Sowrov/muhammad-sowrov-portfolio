@@ -11,7 +11,7 @@ const Project = () => {
         <Title value={"Projects"}></Title>
       </div>
       <div className="min-h-screen flex justify-center items-center mx-10 flex-col gap-3">
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3 ">
           {projects.map((item) => (
             <div key={item.id}>
               <div className="car h-auto md:h-96 lg:h-96 bg-gray-700 text-white shadow-xl">
@@ -39,7 +39,7 @@ const Project = () => {
           ))}
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center mt-4">
         <Link to="https://github.com/Muhammad-Sowrov">
           <Button value={"Show All"}></Button>
         </Link>
