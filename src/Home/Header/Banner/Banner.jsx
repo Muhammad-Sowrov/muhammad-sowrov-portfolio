@@ -35,7 +35,7 @@ const Banner = () => {
             <h1 className="text-2xl md:text-3xl font-bol">
               <Typewriter
                 options={{
-                  strings: ["Frontend Developer."],
+                  strings: ["Frontend Developer.", "React Developer"],
                   autoStart: true,
                   loop: 3,
                 }}
@@ -43,13 +43,13 @@ const Banner = () => {
             </h1>
 
             <div className="flex gap-8 mt-10">
-              <Link to="https://www.linkedin.com/in/muhammad-sowrov">
+              <Link  className="text-2xl" to="https://www.linkedin.com/in/muhammad-sowrov">
                 <CiLinkedin />
               </Link>
-              <Link to="https://www.facebook.com/muhammadsowrov53">
+              <Link  className="text-2xl" to="https://www.facebook.com/muhammadsowrov53">
                 <RiFacebookBoxFill />
               </Link>
-              <Link to="https://twitter.com/__Sowrov">
+              <Link className="text-2xl" to="https://twitter.com/__Sowrov">
                 <FaSquareTwitter />
               </Link>
             </div>
