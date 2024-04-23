@@ -17,11 +17,11 @@ const About = () => {
       <div className=" pt-20 mx-auto ">
         <Title value={"About"}></Title>
       </div>
-      <div className="min-h-screen flex justify-center items-center">
+      <div className="min-h-scree min-h-[60vh] flex justify-center items-center">
         <div className="flex flex-col-reverse md:flex-row lg:flex-row sm:items-centr justify-center gap-10">
           <div className="md:w-1/2 pl-4 md:pl-8">
             <div className="">
-              <p className="font-sm lg:font-bold mb-5 pl-2 md:pl-5">
+              <p className="w-11/12 font-sm lg:font-bold mb-5 pl-2 md:pl-5 items-center justify-center text-center md:text-start">
                 Hi, I'm Sowrov, a dedicated React front-end developer with a
                 passion for creating captivating user experiences. Over the last
                 six months, I've immersed myself in the world of web
@@ -32,7 +32,7 @@ const About = () => {
                 functionality.
               </p>
             </div>
-            <div className="sm:pl-10 pl-2 md:pl-5 flex gap-10 md:gap-20">
+            <div className="pl-20 md:pl-4 lg:pl-8 flex gap-10 md:gap-14">
               {/* <Button value={"Resume"}></Button> */}
               {/* <button onClick={handleDownload} className="border border-white px-3 lg:px-5 py-1 rounded-lg hover:text-gray-600 duration-500 ">Resume</button> */}
               <a
@@ -49,7 +49,7 @@ const About = () => {
           <div className="md:w-1/2 lg:ml-32">
             <img
               src="https://i.ibb.co/3Cycq5Y/IMG-20231211-221702.jpg"
-              className="w-80 rounded-2xl bg-gray-500 hover:bg-gray-50 mt-20 md:mt-0 ml-14 md:ml-0"
+              className="w-80 md:w-72 lg:w-80 rounded-2xl bg-gray-500 hover:bg-gray-50 mt-20 md:mt-0 ml-14 md:ml-10"
               alt=""
             />
           </div>

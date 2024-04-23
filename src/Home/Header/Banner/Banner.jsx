@@ -6,11 +6,12 @@ import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
   return (
-    <div className="min-h-screen flex items-center ">
-      <div className="grid grid-cols-2">
-        <div className="w-ful pl-24 ">
+    <div className="min-h-screen w-full flex items-center justify-center ">
+      <div className="flex items-center justify-center">
+      {/* <div className="grid grid-cols-2"> */}
+        <div className="w-ful p-24 flex items-center justify-center ">
           <div className="flex gap-2">
-            <div className="border-2 border-white h-52"></div>
+            <div className="border-2 border-white h-32 md:h-44"></div>
             {/* <div>
               <h1 className="text-2xl">Hi, I'am</h1>
               <h1 className="text-5xl font-bold">Muhammad</h1>
@@ -28,11 +29,11 @@ const Banner = () => {
               </div>
             </div> */}
              <div>
-            <h1 className="text-2xl sm:pl-1">Hi, I'am</h1>
-            <h1 className="text-5xl font-bold">Muhammad</h1>
-            <h1 className="text-5xl font-bold">Sowrov</h1>
+            <h1 className="text-xl md:text-5xl font-bold">Hi, I'am</h1>
+            <h1 className="text-xl md:text-4xl font-bold">Muhammad Sowrov</h1>
+            {/* <h1 className="text-2xl font-bold">Sowrov</h1> */}
 
-            <h1 className="text-2xl md:text-3xl font-bol">
+            <h1 className="text-xs md:text-2xl font-bold">
               <Typewriter
                 options={{
                   strings: ["Frontend Developer.", "React Developer"],
@@ -42,7 +43,7 @@ const Banner = () => {
               />
             </h1>
 
-            <div className="flex gap-8 mt-10">
+            <div className="flex gap-2 md:gap-8 mt-3 md:mt-5">
               <Link  className="text-2xl" to="https://www.linkedin.com/in/muhammad-sowrov">
                 <CiLinkedin />
               </Link>
@@ -56,7 +57,7 @@ const Banner = () => {
           </div>
           </div>
         </div>
-        <div className="w-full"></div>
+        {/* <div className="w-full"></div> */}
       </div>
     </div>
   );

@@ -26,10 +26,10 @@ const Project = () => {
                   <h2 className="card-title">{item.name}</h2>
                   <p className="h-auto md:h-auto lg:h-24">{item.description}</p>
                   <div className="flex justify-around my-10">
-                    <a href={item.live}>
+                    <a className="hover:text-2xl" href={item.live}>
                       <FaExternalLinkAlt />
                     </a>
-                    <a href={item.code}>
+                    <a className="hover:text-2xl" href={item.code}>
                       <ImGithub />
                     </a>
                   </div>
